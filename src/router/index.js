@@ -14,6 +14,7 @@ import ProductCategory from "../components/category/productCategory"
 import Register from "../components/admin/adminRegister"
 import UserLogin from "../components/user/userLogin"
 import UserRegister from "../components/user/userRegister"
+import Ddmall from "../components/ddmall"
 
 
 Vue.use(VueRouter)
@@ -24,6 +25,7 @@ const routes = [
   {path:"/login",component:Login},
   {path:"/userLogin", component:UserLogin},
   {path:"/userRegister", component:UserRegister},
+  {path:"/ddmall", component:Ddmall},
   {path:"/admin",component:Admin, redirect:"welcome",children:[{path:"/welcome", component:Welcome},{path:"/merchandiseMenu", component:MerchadiseMenu},{path:"/addMerchandise", component:AddMerchandise},{path:"/brandAdministration", component:BrandAdministration},{path:"/addBrand", component:AddBrand},{path:"/classifyMechandise", component:ClassifyMerchandise},{path:"/addCategory", component:AddCategory},{path:"/changeProduct", component:ChangeProduct},{path:"/productCategory", component:ProductCategory}]}
 ]
 
